@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;700&family=Montserrat:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>BOOKSHELF</h1>
+    </header>
+
+    <!-- Main Start -->
+    <main id="main">
+      <!-- Input Content -->
+      <article>
+        <div class="contents">
+          <h2>My Book</h2>
+          <form id="input-book-form" action="#" class="form">
+            <!-- Title -->
+            <div class="input-section">
+              <label for="title">Book Title</label>
+              <input class="fullsize-input" type="text" id="title" name="title" required />
+            </div>
+            <!-- Writer -->
+            <div class="input-section">
+              <label for="writer">Book Writer</label>
+              <input class="fullsize-input" type="text" id="writer" name="writer" required />
+            </div>
+            <!-- Year -->
+            <div class="input-section">
+              <label for="year">Released Year</label>
+              <input class="fullsize-input" type="number" id="year" name="year" required />
+            </div>
+            <!-- Finished -->
+            <div class="check-section">
+              <input type="checkbox" id="finished" />
+              <label for="finished">Finished Reading the Book</label>
+            </div>
+            <div class="input-button">
+              <input type="submit" value="Enter" />
+            </div>
+          </form>
+        </div>
+      </article>
+
+      <!-- Search Bar -->
+      <div class="search-section">
+        <form action="#" id="search-form" class="search-bar">
+          <input
+            class="fullsize-input"
+            type="search"
+            id="search-value"
+            placeholder="Search Book Name" />
+          <input class="search-button" type="submit" id="search-button" value="Search" />
+        </form>
+      </div>
+
+      <!-- Bookshelf -->
+      <div class="bookshelf">
+        <!-- Unfinished Books Section -->
+        <section>
+          <h3>Not Finished</h3>
+          <div class="books" id="unfinished-books"></div>
+        </section>
+        <!-- Finished Books Section -->
+        <section>
+          <h3>Finished</h3>
+          <div class="books" id="finished-books"></div>
+        </section>
+      </div>
+
+      <!-- Pop Up Edit menu -->
+      <aside id="aside">
+        <div class="contents">
+          <h2 id="edit-menu-title">My Book</h2>
+          <form id="edit-form" action="#" class="form">
+            <!-- Title -->
+            <div class="input-section">
+              <label for="edit-title">Book Title</label>
+              <input class="fullsize-input" type="text" id="edit-title" name="title" required />
+            </div>
+            <!-- Writer -->
+            <div class="input-section">
+              <label for="edit-writer">Book Writer</label>
+              <input class="fullsize-input" type="text" id="edit-writer" name="writer" required />
+            </div>
+            <!-- Year -->
+            <div class="input-section">
+              <label for="edit-year">Released Year</label>
+              <input class="fullsize-input" type="number" id="edit-year" name="year" required />
+            </div>
+            <div class="input-button">
+              <input type="submit" value="Enter" />
+            </div>
+          </form>
+        </div>
+        <button id="edit-menu-close">
+          <i data-feather="x"></i>
+        </button>
+      </aside>
+    </main>
+    <!-- Main Finish -->
+
+    <footer>
+      <a href="https://www.linkedin.com/in/satriaalieff/">satriaalieff</a>
+    </footer>
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
